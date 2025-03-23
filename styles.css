@@ -19,6 +19,8 @@ body {
   opacity: 0.8;
   border-radius: 25px;
   padding: 20px;
+  width: 95%;
+  max-width: 450px;
 }
 
 .input-city{
@@ -44,4 +46,36 @@ body {
 
 .img-search {
   width: 20px;
+}
+
+.media-box{
+  margin-top: 30px;
+}
+
+.city {
+  color: white;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.temp {
+  font-size: 20px;
+  color: white;
+  margin-top: 20px;
+}
+
+.smaller-box {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.text-temp{
+  color: white;
+  margin-left: 20px;
+}
+
+.humidity{
+  color: white;
+  margin-top: 20px;
 }
