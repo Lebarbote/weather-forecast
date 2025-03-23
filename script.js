@@ -7,6 +7,9 @@ function putData(data) {
   document.querySelector('.text-temp').innerHTML = data.weather[0].description;
   document.querySelector('.humidity').innerHTML =
     'humidity ' + data.main.humidity + '%';
+  document.querySelector(
+    '.img-weather',
+  ).src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
 }
 
 async function findCity(city) {
@@ -17,6 +20,8 @@ async function findCity(city) {
 }
 
 function clickOnButton() {
-  const city = document.querySelector('.input-city').value;
+  const cityInput = document.querySelector('.input-city');
+  const city = cityInput.value;
   findCity(city);
+  cityInput.value = '';
 }
